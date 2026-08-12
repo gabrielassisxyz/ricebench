@@ -1,0 +1,40 @@
+version: 2
+
+project_name: ricebench
+
+before:
+  hooks:
+    # The binary embeds the built frontend, so this has to run before the Go build. Skipping it
+    # would publish a release that starts and then reports its assets are missing.
+    - bin/build-web
+
+builds:
+  - id: ricebench
+    main: ./cmd/ricebench
+    binary: ricebench
+    env:
+      - CGO_ENABLED=0
+    goos: [linux]
+    goarch: [amd64]
+    ldflags:
+      - -s -w -X main.version={{ .Version }}
+
+archives:
+  - id: ricebench
+    formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    files:
+      - README.md
+      - ROADMAP.md
+
+checksum:
+  name_template: checksums.txt
+
+changelog:
+  use: github
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
+      - "^chore:"
