@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Build the frontend into the directory the Go binary embeds.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+dist=internal/web/dist
+
+# Vite runs with emptyOutDir off so it cannot delete the tracked .gitkeep that go:embed
+# needs on a clone with no frontend build. Clearing the previous output here is what keeps
+# hashed asset filenames from piling up inside the binary release after release.
+find "$dist" -mindepth 1 ! -name .gitkeep -delete
+
+cd web
+npm ci
+npm run build
