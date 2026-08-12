@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+# The deterministic gate. CI runs this exact script, so green here means green there.
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+fail=0
+
+for tool in go gofmt golangci-lint govulncheck npm git; do
+    if ! command -v "$tool" >/dev/null 2>&1; then
+        echo "missing: $tool" >&2
+        fail=1
+    fi
+done
+
+if [ "$fail" -ne 0 ]; then
+    echo "==> bin/ci FAILED"
+    exit 1
+fi
+
+# Keep the toolchains' scratch space off tmpfs.
+#
+# GOCACHE is content-addressed, so several checkouts sharing it is correct rather than
+# dangerous. GOTMPDIR is the one that is unset by default: Go falls back to TMPDIR, and every
+# link step and compiled test binary then lands in /tmp, which is RAM on this kind of desktop.
+# Node's V8 compile cache defaults to the same place and is keyed by version and architecture,
+# so nothing ever prunes it.
+#
+# The directory test is what keeps the gate portable and is not a leftover. A CI runner has no
+# such mount, and the default is right there anyway: the VM is destroyed when the job ends, so
+# nothing accumulates. Hardcoding the mount would break CI to fix one desktop.
+build_root=/mnt/build
+if [ -d "$build_root" ]; then
+    export GOCACHE="$build_root/go-build"
+    export GOTMPDIR="$build_root/go-tmp"
+    export NODE_COMPILE_CACHE="$build_root/node-compile-cache"
+    # Go fails outright when GOTMPDIR names a directory that does not exist, where GOCACHE and
+    # the Node cache are both created on demand.
+    mkdir -p "$GOTMPDIR"
+fi
+
+# First, because the Go build embeds what this produces: a stale bundle would otherwise be
+# what the tests and the release binary actually carry. It also runs the frontend typecheck.
+echo "==> frontend build"
+bin/build-web || fail=1
+
+# Scoped through go list rather than a bare `gofmt -l .`, which would walk web/node_modules
+# on every run for the sake of a tree that holds no Go at all.
+echo "==> gofmt"
+unformatted=$(gofmt -l $(go list -f '{{.Dir}}' ./...))
+if [ -n "$unformatted" ]; then
+    echo "$unformatted"
+    echo "run gofmt -w ."
+    fail=1
+fi
+
+echo "==> vet"
+go vet ./... || fail=1
+
+echo "==> lint"
+golangci-lint run || fail=1
+
+echo "==> test"
+go test ./... || fail=1
+
+echo "==> govulncheck"
+govulncheck ./... || fail=1
+
+echo "==> npm audit"
+(cd web && npm audit --audit-level=high) || fail=1
+
+# Last, so a prose finding never hides a real failure in the checks above.
+echo "==> prose guard"
+bin/slop-guard || fail=1
+
+if [ "$fail" -ne 0 ]; then
+    echo "==> bin/ci FAILED"
+    exit 1
+fi
+
+echo "CI green."
