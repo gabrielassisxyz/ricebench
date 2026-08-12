@@ -36,3 +36,9 @@
 
 # Node
 node_modules/
+
+# Per-checkout agent settings. The project-scoped settings.json beside it is tracked on
+# purpose: it enables the Go skill pack for anyone working in this repo, and installing that
+# pack globally would inject its descriptions into every session, including ones with no Go
+# in sight.
+.claude/settings.local.json
