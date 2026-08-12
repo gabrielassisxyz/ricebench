@@ -69,3 +69,7 @@ bin/ci               # the full gate, and the exact thing CI runs
 
 `bin/worktree new <type>/<description>` creates an isolated worktree and branch. `AGENTS.md`
 carries the working conventions for both people and agents.
+
+## License
+
+MIT. See `LICENSE`.
