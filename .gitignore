@@ -1,0 +1,38 @@
+# >>> repo-harness:gitignore-private-boundary >>>
+# Maintainer notes — not part of the project; they live in the private notes repo,
+# reachable through the `local` symlink. NO trailing slash on any path in this block:
+# a worktree materializes these paths as SYMLINKS, and a `foo/` pattern matches a real
+# directory only — the ignore then keeps working in the main tree and silently fails
+# in every worktree.
+/local
+
+# Environment secrets and the per-machine agent sandbox config. `.env.*` covers the
+# variants a real session produces — `.env.local`, and above all the `.env.bak.<epoch>`
+# an editor or a script leaves behind. One of those sat untracked in a repo for weeks:
+# the pre-commit secret scan only reads what is staged, so a secret nobody stages is a
+# secret nobody scans, and `.env` alone does not match it.
+.env
+.env.*
+!.env.example
+.ai-jail
+# <<< repo-harness:gitignore-private-boundary <<<
+
+# Task backend state. The issue graph is maintainer planning, not part of the published
+# project: its public counterpart is ROADMAP.md. No trailing slash, for the reason above.
+.beads
+.bv
+
+# Built frontend assets. They are embedded into the binary at build time and rebuilt from
+# web/ by bin/build-web, so committing them would publish a derived artifact that goes
+# stale silently. The .gitkeep is tracked on purpose: //go:embed fails outright on a
+# directory with no matching file, and without it every Go command breaks on a fresh clone
+# until someone installs Node.
+/internal/web/dist/*
+!/internal/web/dist/.gitkeep
+
+# Go. The binary pattern is anchored: a bare `ricebench` would also match cmd/ricebench/.
+/dist/
+/ricebench
+
+# Node
+node_modules/
