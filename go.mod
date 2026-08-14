@@ -5,4 +5,4 @@ module github.com/gabrielassisxyz/ricebench
 // entry point, so the gate is red on any toolchain older than this. Pinning here fixes it for
 // every clone through toolchain switching, rather than depending on what each machine has
 // installed. Raise it when a later patch is required; do not lower it to match a local Go.
-go 1.26.5
+go 1.26.6
