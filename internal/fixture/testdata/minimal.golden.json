@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-minimal",
+  "scenes": [
+    {
+      "id": "terminal-shell",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "shell-output",
+          "kind": "surface",
+          "state": "active",
+          "background": "terminal-background",
+          "foreground": "terminal-foreground",
+          "blocks": [
+            {
+              "id": "command-result",
+              "kind": "code",
+              "state": "success",
+              "text": "ok",
+              "foreground": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
