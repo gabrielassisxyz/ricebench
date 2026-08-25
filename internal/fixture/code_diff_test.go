@@ -256,30 +256,6 @@ func isAnnotation(text string) bool {
 	return strings.Contains(text, "error:") || strings.Contains(text, "warning:")
 }
 
-// stripRoleReferences zeroes every role reference so the remaining structure is the
-// local half of the color-only equivalence proof completed in P4.7.
-func stripRoleReferences(set FixtureSet) FixtureSet {
-	for si := range set.Scenes {
-		for ri := range set.Scenes[si].Regions {
-			region := &set.Scenes[si].Regions[ri]
-			region.Background = ""
-			region.Foreground = ""
-			region.Border = ""
-			for bi := range region.Blocks {
-				block := &region.Blocks[bi]
-				block.Background = ""
-				block.Foreground = ""
-				block.Border = ""
-				for runi := range block.Runs {
-					block.Runs[runi].Background = ""
-					block.Runs[runi].Foreground = ""
-				}
-			}
-		}
-	}
-	return set
-}
-
 func stripRunRole(set *FixtureSet, role RoleID) {
 	for si := range set.Scenes {
 		for ri := range set.Scenes[si].Regions {

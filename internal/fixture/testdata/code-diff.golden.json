@@ -12,7 +12,7 @@
           "state": "active",
           "background": "background",
           "foreground": "foreground",
-          "blocks": null
+          "blocks": []
         },
         {
           "id": "tab-bar",
@@ -2636,7 +2636,7 @@
           "state": "active",
           "background": "background",
           "foreground": "foreground",
-          "blocks": null
+          "blocks": []
         },
         {
           "id": "diff-tabs",

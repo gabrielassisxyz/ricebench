@@ -10,7 +10,7 @@
           "id": "editor-frame",
           "kind": "frame",
           "state": "active",
-          "blocks": null
+          "blocks": []
         },
         {
           "id": "tab-bar",
@@ -2209,7 +2209,7 @@
           "id": "diff-frame",
           "kind": "frame",
           "state": "active",
-          "blocks": null
+          "blocks": []
         },
         {
           "id": "diff-tabs",
