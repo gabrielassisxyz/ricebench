@@ -1,0 +1,2429 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-code-diff",
+  "scenes": [
+    {
+      "id": "code-editor",
+      "family": "code-diff",
+      "regions": [
+        {
+          "id": "editor-frame",
+          "kind": "frame",
+          "state": "active",
+          "blocks": null
+        },
+        {
+          "id": "tab-bar",
+          "kind": "tabs",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "tab-selected",
+              "kind": "tab",
+              "state": "selected",
+              "text": "src/lexer.go"
+            },
+            {
+              "id": "tab-inactive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/parser.go"
+            },
+            {
+              "id": "tab-inactive-2",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/ast.go"
+            }
+          ]
+        },
+        {
+          "id": "search-bar",
+          "kind": "row",
+          "state": "focused",
+          "blocks": [
+            {
+              "id": "search-label",
+              "kind": "text",
+              "state": "default",
+              "text": "search:"
+            },
+            {
+              "id": "search-input",
+              "kind": "text",
+              "state": "focused",
+              "text": "Token"
+            },
+            {
+              "id": "search-count",
+              "kind": "status-item",
+              "state": "search-match",
+              "text": "3 matches"
+            }
+          ]
+        },
+        {
+          "id": "gutter",
+          "kind": "column",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "gutter-1",
+              "kind": "code",
+              "state": "default",
+              "text": "1"
+            },
+            {
+              "id": "gutter-2",
+              "kind": "code",
+              "state": "default",
+              "text": "2"
+            },
+            {
+              "id": "gutter-3",
+              "kind": "code",
+              "state": "default",
+              "text": "3"
+            },
+            {
+              "id": "gutter-4",
+              "kind": "code",
+              "state": "default",
+              "text": "4"
+            },
+            {
+              "id": "gutter-5",
+              "kind": "code",
+              "state": "default",
+              "text": "5"
+            },
+            {
+              "id": "gutter-6",
+              "kind": "code",
+              "state": "default",
+              "text": "6"
+            },
+            {
+              "id": "gutter-7",
+              "kind": "code",
+              "state": "default",
+              "text": "7"
+            },
+            {
+              "id": "gutter-8",
+              "kind": "code",
+              "state": "default",
+              "text": "8"
+            },
+            {
+              "id": "gutter-9",
+              "kind": "code",
+              "state": "default",
+              "text": "9"
+            },
+            {
+              "id": "gutter-10",
+              "kind": "code",
+              "state": "default",
+              "text": "10"
+            },
+            {
+              "id": "gutter-11",
+              "kind": "code",
+              "state": "default",
+              "text": "11"
+            },
+            {
+              "id": "gutter-12",
+              "kind": "code",
+              "state": "default",
+              "text": "12"
+            },
+            {
+              "id": "gutter-13",
+              "kind": "code",
+              "state": "default",
+              "text": "13"
+            },
+            {
+              "id": "gutter-14",
+              "kind": "code",
+              "state": "default",
+              "text": "14"
+            },
+            {
+              "id": "gutter-15",
+              "kind": "code",
+              "state": "default",
+              "text": "15"
+            },
+            {
+              "id": "gutter-16",
+              "kind": "code",
+              "state": "default",
+              "text": "16"
+            },
+            {
+              "id": "gutter-17",
+              "kind": "code",
+              "state": "default",
+              "text": "17"
+            },
+            {
+              "id": "gutter-18",
+              "kind": "code",
+              "state": "default",
+              "text": "18"
+            },
+            {
+              "id": "gutter-19",
+              "kind": "code",
+              "state": "default",
+              "text": "19"
+            },
+            {
+              "id": "gutter-20",
+              "kind": "code",
+              "state": "default",
+              "text": "20"
+            },
+            {
+              "id": "gutter-21",
+              "kind": "code",
+              "state": "default",
+              "text": "21"
+            },
+            {
+              "id": "gutter-22",
+              "kind": "code",
+              "state": "default",
+              "text": "22"
+            },
+            {
+              "id": "gutter-23",
+              "kind": "code",
+              "state": "default",
+              "text": "23"
+            },
+            {
+              "id": "gutter-24",
+              "kind": "code",
+              "state": "default",
+              "text": "24"
+            },
+            {
+              "id": "gutter-25",
+              "kind": "code",
+              "state": "default",
+              "text": "25"
+            },
+            {
+              "id": "gutter-26",
+              "kind": "code",
+              "state": "default",
+              "text": "26"
+            },
+            {
+              "id": "gutter-27",
+              "kind": "code",
+              "state": "default",
+              "text": "27"
+            },
+            {
+              "id": "gutter-28",
+              "kind": "code",
+              "state": "default",
+              "text": "28"
+            },
+            {
+              "id": "gutter-29",
+              "kind": "code",
+              "state": "default",
+              "text": "29"
+            },
+            {
+              "id": "gutter-30",
+              "kind": "code",
+              "state": "default",
+              "text": "30"
+            },
+            {
+              "id": "gutter-31",
+              "kind": "code",
+              "state": "default",
+              "text": "31"
+            },
+            {
+              "id": "gutter-32",
+              "kind": "code",
+              "state": "default",
+              "text": "32"
+            },
+            {
+              "id": "gutter-33",
+              "kind": "code",
+              "state": "default",
+              "text": "33"
+            },
+            {
+              "id": "gutter-34",
+              "kind": "code",
+              "state": "default",
+              "text": "34"
+            },
+            {
+              "id": "gutter-35",
+              "kind": "code",
+              "state": "default",
+              "text": "35"
+            },
+            {
+              "id": "gutter-36",
+              "kind": "code",
+              "state": "default",
+              "text": "36"
+            },
+            {
+              "id": "gutter-37",
+              "kind": "code",
+              "state": "default",
+              "text": "37"
+            },
+            {
+              "id": "gutter-38",
+              "kind": "code",
+              "state": "default",
+              "text": "38"
+            },
+            {
+              "id": "gutter-39",
+              "kind": "code",
+              "state": "default",
+              "text": "39"
+            },
+            {
+              "id": "gutter-40",
+              "kind": "code",
+              "state": "default",
+              "text": "40"
+            },
+            {
+              "id": "gutter-41",
+              "kind": "code",
+              "state": "default",
+              "text": "41"
+            },
+            {
+              "id": "gutter-42",
+              "kind": "code",
+              "state": "default",
+              "text": "42"
+            },
+            {
+              "id": "gutter-43",
+              "kind": "code",
+              "state": "default",
+              "text": "43"
+            },
+            {
+              "id": "gutter-44",
+              "kind": "code",
+              "state": "default",
+              "text": "44"
+            },
+            {
+              "id": "gutter-45",
+              "kind": "code",
+              "state": "default",
+              "text": "45"
+            },
+            {
+              "id": "gutter-46",
+              "kind": "code",
+              "state": "default",
+              "text": "46"
+            },
+            {
+              "id": "gutter-47",
+              "kind": "code",
+              "state": "default",
+              "text": "47"
+            },
+            {
+              "id": "gutter-48",
+              "kind": "code",
+              "state": "default",
+              "text": "48"
+            },
+            {
+              "id": "gutter-49",
+              "kind": "code",
+              "state": "default",
+              "text": "49"
+            },
+            {
+              "id": "gutter-50",
+              "kind": "code",
+              "state": "default",
+              "text": "50"
+            },
+            {
+              "id": "gutter-51",
+              "kind": "code",
+              "state": "default",
+              "text": "51"
+            },
+            {
+              "id": "gutter-52",
+              "kind": "code",
+              "state": "default",
+              "text": "52"
+            }
+          ]
+        },
+        {
+          "id": "code",
+          "kind": "column",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "code-1",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "package",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "lexer",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-2",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "import",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\"fmt\"",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-3",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Token is one lexical unit produced by the scanner.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-4",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "type",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "struct",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-5",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default"
+                },
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-6",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-7",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Line",
+                  "state": "default"
+                },
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "int",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-8",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-9",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Scanner walks source text and emits tokens.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-10",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "type",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "struct",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-11",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": "  ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-12",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": "  ",
+                  "state": "default"
+                },
+                {
+                  "text": "int",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-13",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "line",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "int",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-14",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-15",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// NewScanner returns a scanner at the start of src.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-16",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "NewScanner",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "*",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-17",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\u0026",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": ",",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "line",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "1",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-18",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-19",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Next advances and returns the next token.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-20",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "*",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Next",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-21",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "if",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\u003e=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "len",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-22",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\"eof\"",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-23",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-24",
+              "kind": "code",
+              "state": "active",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "ch",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": ":=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": "[",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": "]",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-25",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": "++",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-26",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "if",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "ch",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "==",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "'\\n'",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-27",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "line",
+                  "state": "default"
+                },
+                {
+                  "text": "++",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-28",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-29",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\"char\"",
+                  "state": "default"
+                },
+                {
+                  "text": ",",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "ch",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": ",",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Line",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "line",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-30",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-31",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Peek returns the next token without advancing.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-32",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "*",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Peek",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-33",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "saved",
+                  "state": "warning"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": ":=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "annotation-warning",
+              "kind": "text",
+              "state": "warning",
+              "text": "warning: variable 'saved' is never used"
+            },
+            {
+              "id": "code-34",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "token",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": ":=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "Next",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-35",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "saved",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-36",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "token",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-37",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-38",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// ScanAll drains the scanner into a slice.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-39",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "*",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "ScanAll",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "[",
+                  "state": "default"
+                },
+                {
+                  "text": "]",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-40",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "var",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "out",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "[",
+                  "state": "default"
+                },
+                {
+                  "text": "]",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-41",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "for",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\u003c",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "len",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "src",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-42",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default"
+                },
+                {
+                  "text": "out",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "=",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "append",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "out",
+                  "state": "default"
+                },
+                {
+                  "text": ",",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "Next",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-43",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-44",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "out",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-45",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-46",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Validate reports the first obvious mistake in the stream.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-47",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "*",
+                  "state": "default"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Validate",
+                  "state": "default"
+                },
+                {
+                  "text": "()",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "error",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-48",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "if",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "\u003c",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "0",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-49",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "fmt",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "Errorf",
+                  "state": "default"
+                },
+                {
+                  "text": "(",
+                  "state": "default"
+                },
+                {
+                  "text": "\"negative position: %d\"",
+                  "state": "default"
+                },
+                {
+                  "text": ",",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "s",
+                  "state": "default"
+                },
+                {
+                  "text": ".",
+                  "state": "default"
+                },
+                {
+                  "text": "pos",
+                  "state": "default"
+                },
+                {
+                  "text": ")",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-50",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "code-51",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "return",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "Token",
+                  "state": "default"
+                },
+                {
+                  "text": "{",
+                  "state": "default"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default"
+                },
+                {
+                  "text": ":",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "undefinedName",
+                  "state": "error"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "annotation-error",
+              "kind": "text",
+              "state": "error",
+              "text": "error: undefined name 'undefinedName'"
+            },
+            {
+              "id": "code-52",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "status-bar",
+          "kind": "status",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "status-diagnostics",
+              "kind": "status-item",
+              "state": "error",
+              "text": "1 error, 1 warning"
+            },
+            {
+              "id": "status-mode",
+              "kind": "status-item",
+              "state": "default",
+              "text": "NORMAL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diff-view",
+      "family": "code-diff",
+      "regions": [
+        {
+          "id": "diff-frame",
+          "kind": "frame",
+          "state": "active",
+          "blocks": null
+        },
+        {
+          "id": "diff-tabs",
+          "kind": "tabs",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-tab-selected",
+              "kind": "tab",
+              "state": "selected",
+              "text": "src/lexer.go"
+            },
+            {
+              "id": "diff-tab-inactive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/parser.go"
+            }
+          ]
+        },
+        {
+          "id": "diff-hunk",
+          "kind": "row",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "hunk-header",
+              "kind": "text",
+              "state": "default",
+              "text": "@@ -4,3 +4,3 @@ type Token struct"
+            }
+          ]
+        },
+        {
+          "id": "diff-gutter",
+          "kind": "column",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-gutter-4",
+              "kind": "code",
+              "state": "default",
+              "text": "4"
+            },
+            {
+              "id": "diff-gutter-removed",
+              "kind": "code",
+              "state": "removed",
+              "text": "-"
+            },
+            {
+              "id": "diff-gutter-added",
+              "kind": "code",
+              "state": "added",
+              "text": "+"
+            },
+            {
+              "id": "diff-gutter-modified",
+              "kind": "code",
+              "state": "modified",
+              "text": "~"
+            },
+            {
+              "id": "diff-gutter-5",
+              "kind": "code",
+              "state": "default",
+              "text": "5"
+            }
+          ]
+        },
+        {
+          "id": "diff-code",
+          "kind": "column",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-code-4",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default"
+                },
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-removed",
+              "kind": "code",
+              "state": "removed",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "string",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-added",
+              "kind": "code",
+              "state": "added",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default"
+                },
+                {
+                  "text": " ",
+                  "state": "default"
+                },
+                {
+                  "text": "[",
+                  "state": "default"
+                },
+                {
+                  "text": "]",
+                  "state": "default"
+                },
+                {
+                  "text": "byte",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-modified",
+              "kind": "code",
+              "state": "modified",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Line",
+                  "state": "default"
+                },
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "uint",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-5",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default"
+                },
+                {
+                  "text": "Col",
+                  "state": "default"
+                },
+                {
+                  "text": "     ",
+                  "state": "default"
+                },
+                {
+                  "text": "int",
+                  "state": "default"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diff-status",
+          "kind": "status",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-status-summary",
+              "kind": "status-item",
+              "state": "default",
+              "text": "3 changes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

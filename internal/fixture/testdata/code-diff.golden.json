@@ -1,0 +1,2890 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-code-diff",
+  "scenes": [
+    {
+      "id": "code-editor",
+      "family": "code-diff",
+      "regions": [
+        {
+          "id": "editor-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "background",
+          "foreground": "foreground",
+          "blocks": null
+        },
+        {
+          "id": "tab-bar",
+          "kind": "tabs",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "tab-selected",
+              "kind": "tab",
+              "state": "selected",
+              "text": "src/lexer.go",
+              "foreground": "accent"
+            },
+            {
+              "id": "tab-inactive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/parser.go",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "tab-inactive-2",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/ast.go",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "search-bar",
+          "kind": "row",
+          "state": "focused",
+          "border": "focus",
+          "blocks": [
+            {
+              "id": "search-label",
+              "kind": "text",
+              "state": "default",
+              "text": "search:",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "search-input",
+              "kind": "text",
+              "state": "focused",
+              "text": "Token",
+              "foreground": "foreground"
+            },
+            {
+              "id": "search-count",
+              "kind": "status-item",
+              "state": "search-match",
+              "text": "3 matches",
+              "foreground": "accent"
+            }
+          ]
+        },
+        {
+          "id": "gutter",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "gutter-1",
+              "kind": "code",
+              "state": "default",
+              "text": "1",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-2",
+              "kind": "code",
+              "state": "default",
+              "text": "2",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-3",
+              "kind": "code",
+              "state": "default",
+              "text": "3",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-4",
+              "kind": "code",
+              "state": "default",
+              "text": "4",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-5",
+              "kind": "code",
+              "state": "default",
+              "text": "5",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-6",
+              "kind": "code",
+              "state": "default",
+              "text": "6",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-7",
+              "kind": "code",
+              "state": "default",
+              "text": "7",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-8",
+              "kind": "code",
+              "state": "default",
+              "text": "8",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-9",
+              "kind": "code",
+              "state": "default",
+              "text": "9",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-10",
+              "kind": "code",
+              "state": "default",
+              "text": "10",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-11",
+              "kind": "code",
+              "state": "default",
+              "text": "11",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-12",
+              "kind": "code",
+              "state": "default",
+              "text": "12",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-13",
+              "kind": "code",
+              "state": "default",
+              "text": "13",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-14",
+              "kind": "code",
+              "state": "default",
+              "text": "14",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-15",
+              "kind": "code",
+              "state": "default",
+              "text": "15",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-16",
+              "kind": "code",
+              "state": "default",
+              "text": "16",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-17",
+              "kind": "code",
+              "state": "default",
+              "text": "17",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-18",
+              "kind": "code",
+              "state": "default",
+              "text": "18",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-19",
+              "kind": "code",
+              "state": "default",
+              "text": "19",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-20",
+              "kind": "code",
+              "state": "default",
+              "text": "20",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-21",
+              "kind": "code",
+              "state": "default",
+              "text": "21",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-22",
+              "kind": "code",
+              "state": "default",
+              "text": "22",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-23",
+              "kind": "code",
+              "state": "default",
+              "text": "23",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-24",
+              "kind": "code",
+              "state": "default",
+              "text": "24",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-25",
+              "kind": "code",
+              "state": "default",
+              "text": "25",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-26",
+              "kind": "code",
+              "state": "default",
+              "text": "26",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-27",
+              "kind": "code",
+              "state": "default",
+              "text": "27",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-28",
+              "kind": "code",
+              "state": "default",
+              "text": "28",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-29",
+              "kind": "code",
+              "state": "default",
+              "text": "29",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-30",
+              "kind": "code",
+              "state": "default",
+              "text": "30",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-31",
+              "kind": "code",
+              "state": "default",
+              "text": "31",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-32",
+              "kind": "code",
+              "state": "default",
+              "text": "32",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-33",
+              "kind": "code",
+              "state": "default",
+              "text": "33",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-34",
+              "kind": "code",
+              "state": "default",
+              "text": "34",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-35",
+              "kind": "code",
+              "state": "default",
+              "text": "35",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-36",
+              "kind": "code",
+              "state": "default",
+              "text": "36",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-37",
+              "kind": "code",
+              "state": "default",
+              "text": "37",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-38",
+              "kind": "code",
+              "state": "default",
+              "text": "38",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-39",
+              "kind": "code",
+              "state": "default",
+              "text": "39",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-40",
+              "kind": "code",
+              "state": "default",
+              "text": "40",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-41",
+              "kind": "code",
+              "state": "default",
+              "text": "41",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-42",
+              "kind": "code",
+              "state": "default",
+              "text": "42",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-43",
+              "kind": "code",
+              "state": "default",
+              "text": "43",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-44",
+              "kind": "code",
+              "state": "default",
+              "text": "44",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-45",
+              "kind": "code",
+              "state": "default",
+              "text": "45",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-46",
+              "kind": "code",
+              "state": "default",
+              "text": "46",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-47",
+              "kind": "code",
+              "state": "default",
+              "text": "47",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-48",
+              "kind": "code",
+              "state": "default",
+              "text": "48",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-49",
+              "kind": "code",
+              "state": "default",
+              "text": "49",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-50",
+              "kind": "code",
+              "state": "default",
+              "text": "50",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-51",
+              "kind": "code",
+              "state": "default",
+              "text": "51",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "gutter-52",
+              "kind": "code",
+              "state": "default",
+              "text": "52",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "code",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "code-1",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "package",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "lexer",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-2",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "import",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\"fmt\"",
+                  "state": "default",
+                  "foreground": "ansi-3"
+                }
+              ]
+            },
+            {
+              "id": "code-3",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Token is one lexical unit produced by the scanner.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-4",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "type",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match",
+                  "background": "selection-background",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "struct",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-5",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-6",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-7",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "int",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-8",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-9",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Scanner walks source text and emits tokens.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-10",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "type",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "struct",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-11",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "  ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-12",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "  ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "int",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-13",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "int",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-14",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-15",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// NewScanner returns a scanner at the start of src.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-16",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "NewScanner",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "*",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-17",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\u0026",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ",",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "1",
+                  "state": "default",
+                  "foreground": "ansi-5"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-18",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-19",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Next advances and returns the next token.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-20",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "*",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Next",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match",
+                  "background": "selection-background",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-21",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "if",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\u003e=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "len",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-22",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "search-match",
+                  "background": "selection-background",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\"eof\"",
+                  "state": "default",
+                  "foreground": "ansi-3"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-23",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-24",
+              "kind": "code",
+              "state": "active",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "ch",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": ":=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "[",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "]",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-25",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "++",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-26",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "if",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "ch",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "==",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "'\\n'",
+                  "state": "default",
+                  "foreground": "ansi-3"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-27",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "++",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-28",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-29",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\"char\"",
+                  "state": "default",
+                  "foreground": "ansi-3"
+                },
+                {
+                  "text": ",",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "ch",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": ",",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-30",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-31",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Peek returns the next token without advancing.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-32",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "*",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Peek",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-33",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "saved",
+                  "state": "warning",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": ":=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "annotation-warning",
+              "kind": "text",
+              "state": "warning",
+              "text": "warning: variable 'saved' is never used",
+              "foreground": "warning"
+            },
+            {
+              "id": "code-34",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": ":=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Next",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-35",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "saved",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-36",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-37",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-38",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// ScanAll drains the scanner into a slice.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-39",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "*",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "ScanAll",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "[",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "]",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-40",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "var",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "out",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "[",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "]",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-41",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "for",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\u003c",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "len",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "src",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-42",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "out",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "=",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "append",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "out",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ",",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Next",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-43",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-44",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "out",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "code-45",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-46",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "// Validate reports the first obvious mistake in the stream.",
+                  "state": "default",
+                  "foreground": "ansi-8"
+                }
+              ]
+            },
+            {
+              "id": "code-47",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "*",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Scanner",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Validate",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "()",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "error",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-48",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "if",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "\u003c",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "0",
+                  "state": "default",
+                  "foreground": "ansi-5"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-49",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "        ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "fmt",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Errorf",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "(",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "\"negative position: %d\"",
+                  "state": "default",
+                  "foreground": "ansi-3"
+                },
+                {
+                  "text": ",",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "s",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ".",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "pos",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ")",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-50",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "code-51",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "return",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Token",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "{",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": ":",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "undefinedName",
+                  "state": "error",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            },
+            {
+              "id": "annotation-error",
+              "kind": "text",
+              "state": "error",
+              "text": "error: undefined name 'undefinedName'",
+              "foreground": "error"
+            },
+            {
+              "id": "code-52",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "status-bar",
+          "kind": "status",
+          "state": "default",
+          "background": "surface-elevated",
+          "blocks": [
+            {
+              "id": "status-diagnostics",
+              "kind": "status-item",
+              "state": "error",
+              "text": "1 error, 1 warning",
+              "foreground": "error"
+            },
+            {
+              "id": "status-mode",
+              "kind": "status-item",
+              "state": "default",
+              "text": "NORMAL",
+              "foreground": "text-secondary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diff-view",
+      "family": "code-diff",
+      "regions": [
+        {
+          "id": "diff-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "background",
+          "foreground": "foreground",
+          "blocks": null
+        },
+        {
+          "id": "diff-tabs",
+          "kind": "tabs",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-tab-selected",
+              "kind": "tab",
+              "state": "selected",
+              "text": "src/lexer.go",
+              "foreground": "accent"
+            },
+            {
+              "id": "diff-tab-inactive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/parser.go",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "diff-hunk",
+          "kind": "row",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "hunk-header",
+              "kind": "text",
+              "state": "default",
+              "text": "@@ -4,3 +4,3 @@ type Token struct",
+              "foreground": "text-secondary"
+            }
+          ]
+        },
+        {
+          "id": "diff-gutter",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "diff-gutter-4",
+              "kind": "code",
+              "state": "default",
+              "text": "4",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "diff-gutter-removed",
+              "kind": "code",
+              "state": "removed",
+              "text": "-",
+              "foreground": "diff-remove"
+            },
+            {
+              "id": "diff-gutter-added",
+              "kind": "code",
+              "state": "added",
+              "text": "+",
+              "foreground": "diff-add"
+            },
+            {
+              "id": "diff-gutter-modified",
+              "kind": "code",
+              "state": "modified",
+              "text": "~",
+              "foreground": "diff-modify"
+            },
+            {
+              "id": "diff-gutter-5",
+              "kind": "code",
+              "state": "default",
+              "text": "5",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "diff-code",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "diff-code-4",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-removed",
+              "kind": "code",
+              "state": "removed",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-added",
+              "kind": "code",
+              "state": "added",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "[",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "]",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "byte",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-modified",
+              "kind": "code",
+              "state": "modified",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "uint",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-5",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Col",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "     ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "int",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diff-status",
+          "kind": "status",
+          "state": "default",
+          "background": "surface-elevated",
+          "blocks": [
+            {
+              "id": "diff-status-summary",
+              "kind": "status-item",
+              "state": "default",
+              "text": "3 changes",
+              "foreground": "text-secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
