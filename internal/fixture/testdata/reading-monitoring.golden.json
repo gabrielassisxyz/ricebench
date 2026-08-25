@@ -1,0 +1,1110 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-reading-monitoring",
+  "scenes": [
+    {
+      "id": "reading-note",
+      "family": "reading-monitoring",
+      "regions": [
+        {
+          "id": "note-chrome",
+          "kind": "tabs",
+          "state": "active",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "tab-reading",
+              "kind": "tab",
+              "state": "active",
+              "text": "Reading",
+              "foreground": "accent"
+            },
+            {
+              "id": "tab-notes",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "Notes",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "tab-archive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "Archive",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "prose",
+          "kind": "column",
+          "state": "active",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "heading-title",
+              "kind": "text",
+              "state": "active",
+              "text": "Keeping a personal archive that lasts",
+              "foreground": "accent"
+            },
+            {
+              "id": "meta-published",
+              "kind": "text",
+              "state": "muted",
+              "text": "Published 2026-08-13 · 2 min read",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "heading-why",
+              "kind": "text",
+              "state": "active",
+              "text": "Why plain text wins",
+              "foreground": "accent"
+            },
+            {
+              "id": "para-01",
+              "kind": "text",
+              "state": "default",
+              "text": "A personal archive is only as durable as the format it is stored in.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-02",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "Proprietary formats come and go, but ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "plain text",
+                  "state": "info",
+                  "foreground": "accent"
+                },
+                {
+                  "text": " has outlived every",
+                  "state": "default",
+                  "foreground": "foreground"
+                }
+              ]
+            },
+            {
+              "id": "para-03",
+              "kind": "text",
+              "state": "default",
+              "text": "editor, every operating system, and every vendor that promised to",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-04",
+              "kind": "text",
+              "state": "default",
+              "text": "keep your notes safe. When a tool dies, its files still open in anything.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-05",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "Plain text also makes the archive searchable. Tools like ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "grep",
+                  "state": "default",
+                  "foreground": "text-secondary"
+                },
+                {
+                  "text": " and ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "ripgrep",
+                  "state": "default",
+                  "foreground": "text-secondary"
+                },
+                {
+                  "text": " can scan a",
+                  "state": "default",
+                  "foreground": "foreground"
+                }
+              ]
+            },
+            {
+              "id": "para-06",
+              "kind": "text",
+              "state": "default",
+              "text": "decade of notes in under a second, and the results are reproducible. A binary format",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-07",
+              "kind": "text",
+              "state": "default",
+              "text": "hides its contents behind an application; a text file shows exactly what it holds.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-08",
+              "kind": "text",
+              "state": "default",
+              "text": "The trade-off is that plain text has no styling. Headings, links,",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-09",
+              "kind": "text",
+              "state": "default",
+              "text": "and emphasis are conventions rather than features. That is a",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-10",
+              "kind": "text",
+              "state": "default",
+              "text": "feature in disguise: the meaning lives in the words, not in the",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-11",
+              "kind": "text",
+              "state": "default",
+              "text": "rendering, so the archive survives any change of taste in how it is displayed.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "heading-example",
+              "kind": "text",
+              "state": "active",
+              "text": "A minimal example",
+              "foreground": "accent"
+            },
+            {
+              "id": "para-12",
+              "kind": "text",
+              "state": "default",
+              "text": "A single directory with a few conventions is enough to start. Keep one file",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-13",
+              "kind": "text",
+              "state": "default",
+              "text": "per topic, name it with a date prefix, and write in short paragraphs. The",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-14",
+              "kind": "text",
+              "state": "default",
+              "text": "structure below has served well for years and needs no special tooling to read.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "code-example",
+              "kind": "code",
+              "state": "default",
+              "text": "archive/\n  2026-08-13-reading.md\n  2026-08-14-backups.md\n  index.md",
+              "background": "surface-elevated",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-15",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "The ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "index.md",
+                  "state": "default",
+                  "foreground": "text-secondary"
+                },
+                {
+                  "text": " file is the only piece of structure that matters. It lists",
+                  "state": "default",
+                  "foreground": "foreground"
+                }
+              ]
+            },
+            {
+              "id": "para-16",
+              "kind": "text",
+              "state": "default",
+              "text": "every note with a one-line summary, so the archive can be navigated",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-17",
+              "kind": "text",
+              "state": "default",
+              "text": "without opening each file. Regenerate it with a script when it drifts out of date.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-18",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "Versioning is the second habit. A ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "git",
+                  "state": "default",
+                  "foreground": "text-secondary"
+                },
+                {
+                  "text": " repository turns every edit",
+                  "state": "default",
+                  "foreground": "foreground"
+                }
+              ]
+            },
+            {
+              "id": "para-19",
+              "kind": "text",
+              "state": "default",
+              "text": "into a recoverable point, and a remote copy turns the archive into a",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-20",
+              "kind": "text",
+              "state": "default",
+              "text": "backup. Neither step requires the notes to be in any particular format.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-21",
+              "kind": "text",
+              "state": "default",
+              "text": "A backup that is never tested is not a backup. Restore a single file to a clean",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-22",
+              "kind": "text",
+              "state": "default",
+              "text": "directory once a season, and confirm the index still opens. The exercise takes",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-23",
+              "kind": "text",
+              "state": "default",
+              "text": "minutes and catches the silent failures that only show up when the archive is needed most.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "heading-breaks",
+              "kind": "text",
+              "state": "active",
+              "text": "What breaks an archive",
+              "foreground": "accent"
+            },
+            {
+              "id": "para-24",
+              "kind": "text",
+              "state": "default",
+              "text": "The archive fails in predictable ways. Files are lost to a disk that dies, a",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-25",
+              "kind": "text",
+              "state": "default",
+              "text": "sync that overwrites, or a rename that breaks a link. Each failure has a",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-26",
+              "kind": "text",
+              "state": "default",
+              "text": "cheap fix, but only if the archive is plain text and versioned from the start.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-27",
+              "kind": "text",
+              "state": "default",
+              "text": "Links between notes are the most fragile part. A link that names a file",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-28",
+              "kind": "text",
+              "state": "default",
+              "text": "by its full path breaks the moment the file moves. Prefer links that",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-29",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "name ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "a stable identifier",
+                  "state": "info",
+                  "foreground": "accent"
+                },
+                {
+                  "text": ", and let a small script resolve them at read time.",
+                  "state": "default",
+                  "foreground": "foreground"
+                }
+              ]
+            },
+            {
+              "id": "para-30",
+              "kind": "text",
+              "state": "default",
+              "text": "The lesson is the same one the archive teaches about itself:",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-31",
+              "kind": "text",
+              "state": "default",
+              "text": "keep the format boring, keep the structure explicit, and keep",
+              "foreground": "foreground"
+            },
+            {
+              "id": "para-32",
+              "kind": "text",
+              "state": "default",
+              "text": "a copy somewhere else. Everything else is a matter of taste.",
+              "foreground": "foreground"
+            },
+            {
+              "id": "meta-footer",
+              "kind": "text",
+              "state": "muted",
+              "text": "Last updated 2026-08-13 · source: local notes",
+              "foreground": "text-muted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitoring-dashboard",
+      "family": "reading-monitoring",
+      "regions": [
+        {
+          "id": "process-monitor",
+          "kind": "status",
+          "state": "default",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "proc-normal",
+              "kind": "status-item",
+              "state": "default",
+              "text": "idle",
+              "foreground": "foreground"
+            },
+            {
+              "id": "proc-warning",
+              "kind": "status-item",
+              "state": "warning",
+              "text": "load 4.2",
+              "foreground": "warning"
+            },
+            {
+              "id": "proc-error",
+              "kind": "status-item",
+              "state": "error",
+              "text": "disk full",
+              "foreground": "error"
+            },
+            {
+              "id": "proc-success",
+              "kind": "status-item",
+              "state": "success",
+              "text": "backup ok",
+              "foreground": "success"
+            },
+            {
+              "id": "proc-muted",
+              "kind": "status-item",
+              "state": "muted",
+              "text": "uptime 12d",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "proc-info",
+              "kind": "status-item",
+              "state": "info",
+              "text": "sync 3m ago",
+              "foreground": "info"
+            }
+          ]
+        },
+        {
+          "id": "metric-table",
+          "kind": "table",
+          "state": "default",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-title",
+              "kind": "text",
+              "state": "active",
+              "text": "Service metrics",
+              "foreground": "accent"
+            }
+          ]
+        },
+        {
+          "id": "metric-header",
+          "kind": "row",
+          "state": "active",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-header-name",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "Service",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-header-cpu",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "CPU",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-header-mem",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "Memory",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-01",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-01-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "api",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-01-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "12%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-01-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "180M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-02",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-02-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "db",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-02-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "34%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-02-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "1.2G",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-03",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-03-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "cache",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-03-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "8%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-03-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "96M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-04",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-04-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "queue",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-04-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "21%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-04-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "240M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-05",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-05-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "search",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-05-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "45%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-05-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "890M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-06",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-06-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "auth",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-06-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "6%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-06-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "64M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-07",
+          "kind": "row",
+          "state": "selected",
+          "background": "selection-background",
+          "foreground": "selection-foreground",
+          "blocks": [
+            {
+              "id": "metric-row-07-name",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "web",
+              "foreground": "selection-foreground"
+            },
+            {
+              "id": "metric-row-07-cpu",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "18%",
+              "foreground": "selection-foreground"
+            },
+            {
+              "id": "metric-row-07-mem",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "210M",
+              "foreground": "selection-foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-08",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-08-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "worker",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-08-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "52%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-08-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "1.5G",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-09",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-09-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "mail",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-09-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "9%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-09-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "88M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-10",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-10-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "log",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-10-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "15%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-10-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "160M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-11",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-11-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "cron",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-11-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "3%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-11-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "32M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-12",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-12-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "proxy",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-12-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "27%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-12-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "310M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-13",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-13-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "media",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-13-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "39%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-13-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "760M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-14",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-14-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "index",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-14-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "22%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-14-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "280M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-15",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-15-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "sync",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-15-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "11%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-15-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "120M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-16",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-16-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "report",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-16-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "30%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-16-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "420M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-17",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-17-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "notify",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-17-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "7%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-17-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "72M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-18",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-18-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "backup",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-18-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "41%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-18-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "640M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-19",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-19-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "stats",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-19-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "16%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-19-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "190M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-20",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-20-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "gate",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-20-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "5%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-20-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "48M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-scrollbar",
+          "kind": "overlay",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "text-muted",
+          "blocks": [
+            {
+              "id": "metric-scrollbar-thumb",
+              "kind": "selection",
+              "state": "default",
+              "text": "scroll",
+              "background": "text-muted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
