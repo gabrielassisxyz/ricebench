@@ -43,11 +43,19 @@ func TestGalleryRendersFamilyUnderSelectedPalette(t *testing.T) {
 		}
 	}
 
-	// The response must carry the fixture rendered under the requested palette: the
-	// flat-hierarchy palette collapses background, surface and surface-elevated to
-	// #1a1a1a, so that resolved value must appear in the rendered output.
+	// The response must carry the fixture rendered under the requested palette, which
+	// means asserting on what distinguishes that palette rather than on any resolved
+	// color. Every extreme palette shares a base where background is #1a1a1a, so a
+	// response serving the wrong palette still carries it. Flat hierarchy is the one
+	// that collapses surface and surface-elevated onto the background, so the base
+	// values for those two roles must be absent.
 	if !strings.Contains(body, "background-color:#1a1a1a") {
 		t.Fatal("gallery response does not carry the resolved palette color")
+	}
+	for _, collapsed := range []string{"#242424", "#2e2e2e"} {
+		if strings.Contains(body, collapsed) {
+			t.Fatalf("gallery served a palette that keeps %s: flat hierarchy collapses it", collapsed)
+		}
 	}
 }
 
