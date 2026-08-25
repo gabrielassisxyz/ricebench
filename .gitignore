@@ -42,3 +42,12 @@ node_modules/
 # pack globally would inject its descriptions into every session, including ones with no Go
 # in sight.
 .claude/settings.local.json
+
+# Scratch state written into the checkout by agent tooling, and the reports such a run
+# leaves behind: process ids, logs, run summaries, and completion-audit output. All of it
+# is per-checkout and per-run rather than per-project, so it describes one machine's
+# session instead of the repository, and none of it is reproducible from a clone. The
+# audit directory in particular carries its own git repository, so committing it here
+# would nest one history inside another.
+.ntm/
+/beads_compliance_audit/
