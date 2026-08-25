@@ -1,0 +1,210 @@
+[
+  {
+    "name": "white",
+    "oklch": {
+      "lightness": 1.0,
+      "chroma": 0.0,
+      "hue": 0.0
+    },
+    "srgb": "#ffffff",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "black",
+    "oklch": {
+      "lightness": 0.0,
+      "chroma": 0.0,
+      "hue": 0.0
+    },
+    "srgb": "#000000",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "red",
+    "oklch": {
+      "lightness": 0.6279553606145516,
+      "chroma": 0.2576833074911568,
+      "hue": 29.233885192342633
+    },
+    "srgb": "#ff0000",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "green",
+    "oklch": {
+      "lightness": 0.8664396115356694,
+      "chroma": 0.29482724005899896,
+      "hue": 142.49533888780996
+    },
+    "srgb": "#00ff00",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "blue",
+    "oklch": {
+      "lightness": 0.4520137183853429,
+      "chroma": 0.313214294748189,
+      "hue": 264.052020638055
+    },
+    "srgb": "#0000ff",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "mid-gray",
+    "oklch": {
+      "lightness": 0.5,
+      "chroma": 0.0,
+      "hue": 0.0
+    },
+    "srgb": "#636363",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "mid-sky",
+    "oklch": {
+      "lightness": 0.7,
+      "chroma": 0.1,
+      "hue": 210.0
+    },
+    "srgb": "#43afc1",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "mid-rose",
+    "oklch": {
+      "lightness": 0.8,
+      "chroma": 0.12,
+      "hue": 330.0
+    },
+    "srgb": "#e9a1e3",
+    "mapped": false,
+    "from": null
+  },
+  {
+    "name": "boundary-white",
+    "oklch": {
+      "lightness": 1.0,
+      "chroma": 0.2,
+      "hue": 50.0
+    },
+    "srgb": "#ffffff",
+    "mapped": true,
+    "from": {
+      "lightness": 1.0,
+      "chroma": 0.2,
+      "hue": 50.0
+    }
+  },
+  {
+    "name": "boundary-black",
+    "oklch": {
+      "lightness": 0.0,
+      "chroma": 0.2,
+      "hue": 50.0
+    },
+    "srgb": "#000000",
+    "mapped": true,
+    "from": {
+      "lightness": 0.0,
+      "chroma": 0.2,
+      "hue": 50.0
+    }
+  },
+  {
+    "name": "mid-gold",
+    "oklch": {
+      "lightness": 0.6,
+      "chroma": 0.15,
+      "hue": 60.0
+    },
+    "srgb": "#bf6600",
+    "mapped": true,
+    "from": {
+      "lightness": 0.6,
+      "chroma": 0.15,
+      "hue": 60.0
+    }
+  },
+  {
+    "name": "saturated-lime",
+    "oklch": {
+      "lightness": 0.8,
+      "chroma": 0.35,
+      "hue": 110.0
+    },
+    "srgb": "#c7c700",
+    "mapped": true,
+    "from": {
+      "lightness": 0.8,
+      "chroma": 0.35,
+      "hue": 110.0
+    }
+  },
+  {
+    "name": "saturated-orange",
+    "oklch": {
+      "lightness": 0.5,
+      "chroma": 0.4,
+      "hue": 30.0
+    },
+    "srgb": "#c30000",
+    "mapped": true,
+    "from": {
+      "lightness": 0.5,
+      "chroma": 0.4,
+      "hue": 30.0
+    }
+  },
+  {
+    "name": "light-yellow",
+    "oklch": {
+      "lightness": 0.9,
+      "chroma": 0.2,
+      "hue": 90.0
+    },
+    "srgb": "#ffd71d",
+    "mapped": true,
+    "from": {
+      "lightness": 0.9,
+      "chroma": 0.2,
+      "hue": 90.0
+    }
+  },
+  {
+    "name": "saturated-violet",
+    "oklch": {
+      "lightness": 0.7,
+      "chroma": 0.35,
+      "hue": 250.0
+    },
+    "srgb": "#22a2ff",
+    "mapped": true,
+    "from": {
+      "lightness": 0.7,
+      "chroma": 0.35,
+      "hue": 250.0
+    }
+  },
+  {
+    "name": "deep-teal",
+    "oklch": {
+      "lightness": 0.55,
+      "chroma": 0.3,
+      "hue": 200.0
+    },
+    "srgb": "#00848b",
+    "mapped": true,
+    "from": {
+      "lightness": 0.55,
+      "chroma": 0.3,
+      "hue": 200.0
+    }
+  }
+]
