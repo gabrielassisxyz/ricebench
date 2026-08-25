@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-terminal-agent",
+  "scenes": [
+    {
+      "id": "terminal-shell",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "shell-frame",
+          "kind": "frame",
+          "state": "active",
+          "blocks": [
+            {
+              "id": "shell-prompt",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "❯ ",
+                  "state": "default"
+                },
+                {
+                  "text": "/srv/app",
+                  "state": "default"
+                },
+                {
+                  "text": " (main)",
+                  "state": "muted"
+                },
+                {
+                  "text": " make test",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "shell-output",
+              "kind": "text",
+              "state": "default",
+              "text": "running 42 checks across 3 packages"
+            },
+            {
+              "id": "shell-success",
+              "kind": "text",
+              "state": "success",
+              "text": "ok      pkg/parser    0.412s"
+            },
+            {
+              "id": "shell-warning",
+              "kind": "text",
+              "state": "warning",
+              "text": "warning: flag -coverprofile is deprecated and will be removed"
+            },
+            {
+              "id": "shell-error",
+              "kind": "text",
+              "state": "error",
+              "text": "FAIL: expected 3 assertions, got 2"
+            },
+            {
+              "id": "shell-info",
+              "kind": "text",
+              "state": "info",
+              "text": "note: 1 test skipped because it needs a display"
+            },
+            {
+              "id": "shell-cursor",
+              "kind": "cursor",
+              "state": "focused",
+              "runs": [
+                {
+                  "text": "▊",
+                  "state": "focused"
+                }
+              ]
+            },
+            {
+              "id": "shell-selection",
+              "kind": "selection",
+              "state": "selected",
+              "runs": [
+                {
+                  "text": "selected output line",
+                  "state": "selected"
+                }
+              ]
+            },
+            {
+              "id": "shell-active-line",
+              "kind": "text",
+              "state": "active",
+              "text": "active: the command currently running"
+            },
+            {
+              "id": "shell-inactive",
+              "kind": "text",
+              "state": "inactive",
+              "text": "inactive: output from an earlier session, dimmed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agent-conversation",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "conversation-frame",
+          "kind": "frame",
+          "state": "active",
+          "blocks": [
+            {
+              "id": "assistant-prose",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "The fixture set is a measurement contract. Each scene renders from one structural definition, so a comparison can only differ in color. ",
+                  "state": "default"
+                },
+                {
+                  "text": "`FixtureSet.Validate`",
+                  "state": "default"
+                },
+                {
+                  "text": " rejects a scene whose family is unknown, and ",
+                  "state": "default"
+                },
+                {
+                  "text": "`ValidatePair`",
+                  "state": "default"
+                },
+                {
+                  "text": " proves every role reference resolves against a palette.",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "assistant-code",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func ",
+                  "state": "default"
+                },
+                {
+                  "text": "Validate",
+                  "state": "default"
+                },
+                {
+                  "text": "() error {",
+                  "state": "default"
+                },
+                {
+                  "text": "  return nil",
+                  "state": "default"
+                },
+                {
+                  "text": "}",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "tool-call",
+              "kind": "text",
+              "state": "info",
+              "runs": [
+                {
+                  "text": "▸ tool call: ",
+                  "state": "info"
+                },
+                {
+                  "text": "read_file",
+                  "state": "default"
+                },
+                {
+                  "text": " · ",
+                  "state": "muted"
+                },
+                {
+                  "text": "path=pkg/parser/schema.go",
+                  "state": "muted"
+                }
+              ]
+            },
+            {
+              "id": "tool-result",
+              "kind": "text",
+              "state": "muted",
+              "text": "result: 214 lines, 6.1 kB, cached"
+            },
+            {
+              "id": "conversation-active",
+              "kind": "text",
+              "state": "active",
+              "text": "active: the response currently streaming"
+            },
+            {
+              "id": "conversation-inactive",
+              "kind": "text",
+              "state": "inactive",
+              "text": "inactive: an earlier exchange, dimmed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "terminal-ansi",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "ansi-frame",
+          "kind": "frame",
+          "state": "active",
+          "blocks": [
+            {
+              "id": "ansi-log",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "PASS ",
+                  "state": "success"
+                },
+                {
+                  "text": "pkg/parser",
+                  "state": "default"
+                },
+                {
+                  "text": "  0.412s",
+                  "state": "muted"
+                },
+                {
+                  "text": "FAIL ",
+                  "state": "error"
+                },
+                {
+                  "text": "pkg/color",
+                  "state": "default"
+                },
+                {
+                  "text": "  0.081s",
+                  "state": "muted"
+                },
+                {
+                  "text": "SKIP ",
+                  "state": "warning"
+                },
+                {
+                  "text": "pkg/server",
+                  "state": "default"
+                },
+                {
+                  "text": "  no display",
+                  "state": "muted"
+                },
+                {
+                  "text": "INFO ",
+                  "state": "info"
+                },
+                {
+                  "text": "listening on :8080",
+                  "state": "default"
+                },
+                {
+                  "text": "WARN ",
+                  "state": "warning"
+                },
+                {
+                  "text": "deprecated flag",
+                  "state": "default"
+                },
+                {
+                  "text": "LINK ",
+                  "state": "info"
+                },
+                {
+                  "text": "http://localhost:8080",
+                  "state": "default"
+                },
+                {
+                  "text": "ERR! ",
+                  "state": "error"
+                },
+                {
+                  "text": "bright error",
+                  "state": "default"
+                },
+                {
+                  "text": "OK   ",
+                  "state": "success"
+                },
+                {
+                  "text": "bright success",
+                  "state": "default"
+                },
+                {
+                  "text": "WARN!",
+                  "state": "warning"
+                },
+                {
+                  "text": "bright warning",
+                  "state": "default"
+                },
+                {
+                  "text": "INFO!",
+                  "state": "info"
+                },
+                {
+                  "text": "bright info",
+                  "state": "default"
+                },
+                {
+                  "text": "HILITE ",
+                  "state": "default"
+                },
+                {
+                  "text": "bright highlight",
+                  "state": "default"
+                },
+                {
+                  "text": "LINK!",
+                  "state": "info"
+                },
+                {
+                  "text": "bright link",
+                  "state": "default"
+                }
+              ]
+            },
+            {
+              "id": "ansi-background",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "normal ",
+                  "state": "default"
+                },
+                {
+                  "text": "on blue",
+                  "state": "default"
+                },
+                {
+                  "text": " after",
+                  "state": "default"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
