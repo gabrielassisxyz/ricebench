@@ -27,47 +27,12 @@ func TestCanonicalHashIsDeterministic(t *testing.T) {
 	}
 }
 
-func TestCanonicalHashPreservedAcrossPaletteValueChanges(t *testing.T) {
-	for _, set := range allFixtureSets() {
-		before, err := CanonicalHash(set)
-		if err != nil {
-			t.Fatalf("%s: %v", set.ID, err)
-		}
-
-		palette := minimalPalette("palette-one")
-		mutateEveryAuthoredColor(&palette)
-
-		after, err := CanonicalHash(set)
-		if err != nil {
-			t.Fatalf("%s: %v", set.ID, err)
-		}
-		if before != after {
-			t.Fatalf("%s: palette value change moved the canonical hash", set.ID)
-		}
-	}
-}
-
-func TestCanonicalSceneHashesPreservedAcrossPaletteValueChanges(t *testing.T) {
-	for _, set := range allFixtureSets() {
-		before, err := CanonicalSceneHashes(set)
-		if err != nil {
-			t.Fatalf("%s: %v", set.ID, err)
-		}
-
-		palette := minimalPalette("palette-one")
-		mutateEveryAuthoredColor(&palette)
-
-		after, err := CanonicalSceneHashes(set)
-		if err != nil {
-			t.Fatalf("%s: %v", set.ID, err)
-		}
-		for sceneID, hash := range before {
-			if after[sceneID] != hash {
-				t.Fatalf("%s: scene %q hash changed across palette value change", set.ID, sceneID)
-			}
-		}
-	}
-}
+// Palette values cannot reach the canonical form, because Canonicalize takes only the
+// fixture set and the palette is a separate document. Asserting that directly would be a
+// tautology: the two hashes would come from the same unchanged input. What can actually
+// break the property is a fixture that inlines a resolved color where a role reference
+// belongs, which makes the structure carry a palette-specific value. That is the case
+// TestCanonicalizeRejectsResolvedRoleValue covers, and it is where this obligation lives.
 
 func TestCanonicalSceneHashesCoverEveryScene(t *testing.T) {
 	for _, set := range allFixtureSets() {
@@ -249,19 +214,6 @@ func TestCanonicalGoldenForOneScenePerFamily(t *testing.T) {
 				t.Fatalf("canonical scene differs from golden:\n%s", encoded)
 			}
 		})
-	}
-}
-
-func mutateEveryAuthoredColor(palette *Palette) {
-	for index := range palette.SemanticCore {
-		if palette.SemanticCore[index].Value != nil {
-			palette.SemanticCore[index].Value.SRGB = "#000000"
-		}
-	}
-	for index := range palette.Terminal.ANSI {
-		if palette.Terminal.ANSI[index].Value != nil {
-			palette.Terminal.ANSI[index].Value.SRGB = "#000000"
-		}
 	}
 }
 
