@@ -119,6 +119,34 @@ type ContentRun struct {
 	Foreground RoleID        `json:"foreground,omitempty"`
 }
 
+// MarshalJSON normalizes a nil collection slice to an empty array before encoding. A
+// field declared without omitempty promises the key is always present with a value of its
+// declared type, but a nil Go slice marshals to null, which contradicts that promise and
+// forces every consumer to defend against a shape the schema said could not occur.
+func (f FixtureSet) MarshalJSON() ([]byte, error) {
+	type plain FixtureSet
+	if f.Scenes == nil {
+		f.Scenes = []Scene{}
+	}
+	return json.Marshal(plain(f))
+}
+
+func (s Scene) MarshalJSON() ([]byte, error) {
+	type plain Scene
+	if s.Regions == nil {
+		s.Regions = []Region{}
+	}
+	return json.Marshal(plain(s))
+}
+
+func (r Region) MarshalJSON() ([]byte, error) {
+	type plain Region
+	if r.Blocks == nil {
+		r.Blocks = []ContentBlock{}
+	}
+	return json.Marshal(plain(r))
+}
+
 // MarshalIndent is the canonical human-readable JSON encoding for versioned artifacts.
 func MarshalIndent(value any) ([]byte, error) {
 	encoded, err := json.MarshalIndent(value, "", "  ")
