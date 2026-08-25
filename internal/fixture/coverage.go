@@ -84,6 +84,43 @@ func RequiredRoleCoverage(sets ...FixtureSet) error {
 	return nil
 }
 
+// RoleCoverage groups every role reference by role ID, resolving terminal aliases to
+// their semantic target so a role covered only through an alias still appears under its
+// semantic name. Roles with no references are absent from the map.
+func RoleCoverage(definition FixtureSet) map[RoleID][]RoleReference {
+	byRole := make(map[RoleID][]RoleReference)
+	for _, reference := range Coverage(definition) {
+		byRole[reference.Role] = append(byRole[reference.Role], reference)
+		if target, ok := terminalAliasTargets[reference.Role]; ok {
+			byRole[target] = append(byRole[target], reference)
+		}
+	}
+	return byRole
+}
+
+// RoleCoverageEntry pairs a required role with the references that cover it.
+type RoleCoverageEntry struct {
+	Role       RoleID
+	References []RoleReference
+}
+
+// CoverageView returns every required role in schema order, each with the references
+// that cover it across the given sets. A role with no references appears with an empty
+// list, so the view shows the full required surface rather than only what is covered.
+func CoverageView(sets ...FixtureSet) []RoleCoverageEntry {
+	byRole := make(map[RoleID][]RoleReference)
+	for _, set := range sets {
+		for role, references := range RoleCoverage(set) {
+			byRole[role] = append(byRole[role], references...)
+		}
+	}
+	entries := make([]RoleCoverageEntry, 0, len(requiredCoverageRoles()))
+	for _, role := range requiredCoverageRoles() {
+		entries = append(entries, RoleCoverageEntry{Role: role, References: byRole[role]})
+	}
+	return entries
+}
+
 func requiredCoverageRoles() []RoleID {
 	roles := make([]RoleID, 0, len(semanticCoreRoleIDs)+len(ansiRoleIDs)+len(terminalAliasRoleIDs))
 	roles = append(roles, semanticCoreRoleIDs...)

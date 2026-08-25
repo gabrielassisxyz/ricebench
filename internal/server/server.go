@@ -22,6 +22,7 @@ func New(assets fs.FS) (http.Handler, error) {
 	}
 
 	mux := http.NewServeMux()
+	mux.Handle(galleryPath, galleryHandler())
 	mux.Handle("/", http.FileServerFS(assets))
 	return mux, nil
 }
