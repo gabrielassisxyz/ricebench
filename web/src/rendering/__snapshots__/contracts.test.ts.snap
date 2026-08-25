@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fixture rendering contract > covers every schema-v1 renderer vocabulary 1`] = `
+{
+  "contentKinds": [
+    "text",
+    "code",
+    "tab",
+    "list-item",
+    "table-cell",
+    "status-item",
+    "selection",
+    "focus-ring",
+    "cursor",
+    "badge",
+  ],
+  "regionKinds": [
+    "frame",
+    "surface",
+    "row",
+    "column",
+    "tabs",
+    "list",
+    "table",
+    "status",
+    "overlay",
+  ],
+  "semanticStates": [
+    "default",
+    "active",
+    "inactive",
+    "focused",
+    "selected",
+    "muted",
+    "success",
+    "warning",
+    "error",
+    "info",
+    "urgent",
+    "added",
+    "removed",
+    "modified",
+    "search-match",
+  ],
+}
+`;

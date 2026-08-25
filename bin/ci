@@ -44,6 +44,9 @@ fi
 echo "==> frontend build"
 bin/build-web || fail=1
 
+echo "==> frontend conformance"
+(cd web && npm run test) || fail=1
+
 # Scoped through go list rather than a bare `gofmt -l .`, which would walk web/node_modules
 # on every run for the sake of a tree that holds no Go at all.
 echo "==> gofmt"
