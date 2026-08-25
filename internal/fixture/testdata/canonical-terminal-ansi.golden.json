@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-terminal-agent",
+  "scenes": [
+    {
+      "id": "terminal-ansi",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "ansi-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "terminal-background",
+          "foreground": "terminal-foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "ansi-log",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "PASS ",
+                  "state": "success",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "pkg/parser",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "  0.412s",
+                  "state": "muted",
+                  "foreground": "ansi-8"
+                },
+                {
+                  "text": "FAIL ",
+                  "state": "error",
+                  "foreground": "ansi-1"
+                },
+                {
+                  "text": "pkg/color",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "  0.081s",
+                  "state": "muted",
+                  "foreground": "ansi-8"
+                },
+                {
+                  "text": "SKIP ",
+                  "state": "warning",
+                  "foreground": "ansi-3"
+                },
+                {
+                  "text": "pkg/server",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "  no display",
+                  "state": "muted",
+                  "foreground": "ansi-8"
+                },
+                {
+                  "text": "INFO ",
+                  "state": "info",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": "listening on :8080",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "WARN ",
+                  "state": "warning",
+                  "foreground": "ansi-5"
+                },
+                {
+                  "text": "deprecated flag",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "LINK ",
+                  "state": "info",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "http://localhost:8080",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "ERR! ",
+                  "state": "error",
+                  "foreground": "ansi-9"
+                },
+                {
+                  "text": "bright error",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                },
+                {
+                  "text": "OK   ",
+                  "state": "success",
+                  "foreground": "ansi-10"
+                },
+                {
+                  "text": "bright success",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                },
+                {
+                  "text": "WARN!",
+                  "state": "warning",
+                  "foreground": "ansi-11"
+                },
+                {
+                  "text": "bright warning",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                },
+                {
+                  "text": "INFO!",
+                  "state": "info",
+                  "foreground": "ansi-12"
+                },
+                {
+                  "text": "bright info",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                },
+                {
+                  "text": "HILITE ",
+                  "state": "default",
+                  "foreground": "ansi-13"
+                },
+                {
+                  "text": "bright highlight",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                },
+                {
+                  "text": "LINK!",
+                  "state": "info",
+                  "foreground": "ansi-14"
+                },
+                {
+                  "text": "bright link",
+                  "state": "default",
+                  "foreground": "ansi-15"
+                }
+              ]
+            },
+            {
+              "id": "ansi-background",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "normal ",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "on blue",
+                  "state": "default",
+                  "background": "ansi-4",
+                  "foreground": "ansi-0"
+                },
+                {
+                  "text": " after",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

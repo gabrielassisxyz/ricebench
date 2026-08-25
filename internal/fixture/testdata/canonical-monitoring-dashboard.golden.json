@@ -1,0 +1,706 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-reading-monitoring",
+  "scenes": [
+    {
+      "id": "monitoring-dashboard",
+      "family": "reading-monitoring",
+      "regions": [
+        {
+          "id": "process-monitor",
+          "kind": "status",
+          "state": "default",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "proc-normal",
+              "kind": "status-item",
+              "state": "default",
+              "text": "idle",
+              "foreground": "foreground"
+            },
+            {
+              "id": "proc-warning",
+              "kind": "status-item",
+              "state": "warning",
+              "text": "load 4.2",
+              "foreground": "warning"
+            },
+            {
+              "id": "proc-error",
+              "kind": "status-item",
+              "state": "error",
+              "text": "disk full",
+              "foreground": "error"
+            },
+            {
+              "id": "proc-success",
+              "kind": "status-item",
+              "state": "success",
+              "text": "backup ok",
+              "foreground": "success"
+            },
+            {
+              "id": "proc-muted",
+              "kind": "status-item",
+              "state": "muted",
+              "text": "uptime 12d",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "proc-info",
+              "kind": "status-item",
+              "state": "info",
+              "text": "sync 3m ago",
+              "foreground": "info"
+            }
+          ]
+        },
+        {
+          "id": "metric-table",
+          "kind": "table",
+          "state": "default",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-title",
+              "kind": "text",
+              "state": "active",
+              "text": "Service metrics",
+              "foreground": "accent"
+            }
+          ]
+        },
+        {
+          "id": "metric-header",
+          "kind": "row",
+          "state": "active",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-header-name",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "Service",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-header-cpu",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "CPU",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-header-mem",
+              "kind": "table-cell",
+              "state": "active",
+              "text": "Memory",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-01",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-01-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "api",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-01-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "12%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-01-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "180M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-02",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-02-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "db",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-02-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "34%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-02-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "1.2G",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-03",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-03-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "cache",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-03-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "8%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-03-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "96M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-04",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-04-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "queue",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-04-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "21%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-04-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "240M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-05",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-05-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "search",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-05-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "45%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-05-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "890M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-06",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-06-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "auth",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-06-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "6%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-06-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "64M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-07",
+          "kind": "row",
+          "state": "selected",
+          "background": "selection-background",
+          "foreground": "selection-foreground",
+          "blocks": [
+            {
+              "id": "metric-row-07-name",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "web",
+              "foreground": "selection-foreground"
+            },
+            {
+              "id": "metric-row-07-cpu",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "18%",
+              "foreground": "selection-foreground"
+            },
+            {
+              "id": "metric-row-07-mem",
+              "kind": "table-cell",
+              "state": "selected",
+              "text": "210M",
+              "foreground": "selection-foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-08",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-08-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "worker",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-08-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "52%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-08-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "1.5G",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-09",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-09-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "mail",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-09-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "9%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-09-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "88M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-10",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-10-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "log",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-10-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "15%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-10-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "160M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-11",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-11-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "cron",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-11-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "3%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-11-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "32M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-12",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-12-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "proxy",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-12-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "27%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-12-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "310M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-13",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-13-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "media",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-13-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "39%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-13-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "760M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-14",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-14-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "index",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-14-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "22%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-14-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "280M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-15",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-15-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "sync",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-15-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "11%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-15-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "120M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-16",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-16-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "report",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-16-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "30%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-16-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "420M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-17",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-17-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "notify",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-17-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "7%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-17-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "72M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-18",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-18-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "backup",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-18-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "41%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-18-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "640M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-19",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-19-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "stats",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-19-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "16%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-19-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "190M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-row-20",
+          "kind": "row",
+          "state": "default",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "metric-row-20-name",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "gate",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-20-cpu",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "5%",
+              "foreground": "foreground"
+            },
+            {
+              "id": "metric-row-20-mem",
+              "kind": "table-cell",
+              "state": "default",
+              "text": "48M",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "metric-scrollbar",
+          "kind": "overlay",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "text-muted",
+          "blocks": [
+            {
+              "id": "metric-scrollbar-thumb",
+              "kind": "selection",
+              "state": "default",
+              "text": "scroll",
+              "background": "text-muted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

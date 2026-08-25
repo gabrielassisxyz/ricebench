@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-code-diff",
+  "scenes": [
+    {
+      "id": "diff-view",
+      "family": "code-diff",
+      "regions": [
+        {
+          "id": "diff-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "background",
+          "foreground": "foreground",
+          "blocks": []
+        },
+        {
+          "id": "diff-tabs",
+          "kind": "tabs",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "diff-tab-selected",
+              "kind": "tab",
+              "state": "selected",
+              "text": "src/lexer.go",
+              "foreground": "accent"
+            },
+            {
+              "id": "diff-tab-inactive",
+              "kind": "tab",
+              "state": "inactive",
+              "text": "src/parser.go",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "diff-hunk",
+          "kind": "row",
+          "state": "default",
+          "blocks": [
+            {
+              "id": "hunk-header",
+              "kind": "text",
+              "state": "default",
+              "text": "@@ -4,3 +4,3 @@ type Token struct",
+              "foreground": "text-secondary"
+            }
+          ]
+        },
+        {
+          "id": "diff-gutter",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "diff-gutter-4",
+              "kind": "code",
+              "state": "default",
+              "text": "4",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "diff-gutter-removed",
+              "kind": "code",
+              "state": "removed",
+              "text": "-",
+              "foreground": "diff-remove"
+            },
+            {
+              "id": "diff-gutter-added",
+              "kind": "code",
+              "state": "added",
+              "text": "+",
+              "foreground": "diff-add"
+            },
+            {
+              "id": "diff-gutter-modified",
+              "kind": "code",
+              "state": "modified",
+              "text": "~",
+              "foreground": "diff-modify"
+            },
+            {
+              "id": "diff-gutter-5",
+              "kind": "code",
+              "state": "default",
+              "text": "5",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "diff-code",
+          "kind": "column",
+          "state": "default",
+          "background": "surface",
+          "blocks": [
+            {
+              "id": "diff-code-4",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Kind",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-removed",
+              "kind": "code",
+              "state": "removed",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "string",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-added",
+              "kind": "code",
+              "state": "added",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Literal",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "[",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "]",
+                  "state": "default",
+                  "foreground": "ansi-7"
+                },
+                {
+                  "text": "byte",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-modified",
+              "kind": "code",
+              "state": "modified",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Line",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "uint",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            },
+            {
+              "id": "diff-code-5",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "    ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "Col",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": "     ",
+                  "state": "default",
+                  "foreground": "foreground"
+                },
+                {
+                  "text": "int",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "diff-status",
+          "kind": "status",
+          "state": "default",
+          "background": "surface-elevated",
+          "blocks": [
+            {
+              "id": "diff-status-summary",
+              "kind": "status-item",
+              "state": "default",
+              "text": "3 changes",
+              "foreground": "text-secondary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
