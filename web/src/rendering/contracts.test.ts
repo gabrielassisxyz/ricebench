@@ -49,6 +49,15 @@ describe('renderer source conformance', () => {
     ])
   })
 
+  it('rejects color arithmetic in the renderer', () => {
+    expect(scanSource('const l = 0.2126 * r + 0.7152 * g + 0.0722 * b', 'example.ts')).toEqual([
+      { file: 'example.ts', rule: 'color-math', match: '0.2126' },
+    ])
+    expect(scanSource('const ratio = contrastRatio(a, b)', 'example.ts')).toEqual([
+      { file: 'example.ts', rule: 'color-math', match: 'contrastRatio' },
+    ])
+  })
+
   it('reports raw colors in recursively scanned source files', async () => {
     const root = await rendererSourceDirectory()
     const file = join(root, 'nested', 'example.ts')
