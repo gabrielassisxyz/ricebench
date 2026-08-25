@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-terminal-agent",
+  "scenes": [
+    {
+      "id": "terminal-shell",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "shell-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "terminal-background",
+          "foreground": "terminal-foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "shell-prompt",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "❯ ",
+                  "state": "default",
+                  "foreground": "ansi-2"
+                },
+                {
+                  "text": "/srv/app",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": " (main)",
+                  "state": "muted",
+                  "foreground": "text-muted"
+                },
+                {
+                  "text": " make test",
+                  "state": "default",
+                  "background": "terminal-background",
+                  "foreground": "terminal-foreground"
+                }
+              ]
+            },
+            {
+              "id": "shell-output",
+              "kind": "text",
+              "state": "default",
+              "text": "running 42 checks across 3 packages",
+              "foreground": "terminal-foreground"
+            },
+            {
+              "id": "shell-success",
+              "kind": "text",
+              "state": "success",
+              "text": "ok      pkg/parser    0.412s",
+              "foreground": "success"
+            },
+            {
+              "id": "shell-warning",
+              "kind": "text",
+              "state": "warning",
+              "text": "warning: flag -coverprofile is deprecated and will be removed",
+              "foreground": "warning"
+            },
+            {
+              "id": "shell-error",
+              "kind": "text",
+              "state": "error",
+              "text": "FAIL: expected 3 assertions, got 2",
+              "foreground": "error"
+            },
+            {
+              "id": "shell-info",
+              "kind": "text",
+              "state": "info",
+              "text": "note: 1 test skipped because it needs a display",
+              "foreground": "info"
+            },
+            {
+              "id": "shell-cursor",
+              "kind": "cursor",
+              "state": "focused",
+              "runs": [
+                {
+                  "text": "▊",
+                  "state": "focused",
+                  "foreground": "terminal-cursor"
+                }
+              ]
+            },
+            {
+              "id": "shell-selection",
+              "kind": "selection",
+              "state": "selected",
+              "runs": [
+                {
+                  "text": "selected output line",
+                  "state": "selected",
+                  "background": "terminal-selection-background",
+                  "foreground": "terminal-selection-foreground"
+                }
+              ]
+            },
+            {
+              "id": "shell-active-line",
+              "kind": "text",
+              "state": "active",
+              "text": "active: the command currently running",
+              "foreground": "terminal-foreground"
+            },
+            {
+              "id": "shell-inactive",
+              "kind": "text",
+              "state": "inactive",
+              "text": "inactive: output from an earlier session, dimmed",
+              "foreground": "text-muted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
