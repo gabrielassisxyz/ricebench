@@ -197,6 +197,54 @@ func TestValidatePairRejectsMissingRunRole(t *testing.T) {
 	assertErrorContains(t, err, `runs[0]: role "fixture-only-role" does not exist in palette "palette-one"`)
 }
 
+func TestNilCollectionsMarshalAsEmptyArrays(t *testing.T) {
+	tests := []struct {
+		name  string
+		value any
+		key   string
+	}{
+		{
+			name:  "fixture set scenes",
+			value: FixtureSet{SchemaVersion: FixtureSchemaVersion, ID: "fixture-empty"},
+			key:   "scenes",
+		},
+		{
+			name:  "scene regions",
+			value: Scene{ID: "scene-empty", Family: FamilyTerminalAgent},
+			key:   "regions",
+		},
+		{
+			name:  "region blocks",
+			value: Region{ID: "region-empty", Kind: RegionSurface, State: StateDefault},
+			key:   "blocks",
+		},
+	}
+
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			serialized, err := json.Marshal(test.value)
+			if err != nil {
+				t.Fatalf("marshal: %v", err)
+			}
+			var document map[string]any
+			if err := json.Unmarshal(serialized, &document); err != nil {
+				t.Fatalf("unmarshal: %v", err)
+			}
+			value, ok := document[test.key]
+			if !ok {
+				t.Fatalf("key %q absent from %s", test.key, serialized)
+			}
+			slice, ok := value.([]any)
+			if !ok {
+				t.Fatalf("key %q serialized as %T (%v), want an empty array", test.key, value, value)
+			}
+			if len(slice) != 0 {
+				t.Fatalf("key %q serialized as %v, want an empty array", test.key, value)
+			}
+		})
+	}
+}
+
 func TestMarshalIndentIsDeterministicAndHumanDiffable(t *testing.T) {
 	document := minimalFixture()
 

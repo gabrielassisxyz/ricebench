@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-desktop-shell",
+  "scenes": [
+    {
+      "id": "desktop-shell-workspace",
+      "family": "desktop-shell",
+      "regions": [
+        {
+          "id": "wallpaper",
+          "kind": "surface",
+          "state": "default",
+          "background": "background",
+          "blocks": []
+        },
+        {
+          "id": "status-bar",
+          "kind": "status",
+          "state": "default",
+          "background": "surface",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "workspace-active",
+              "kind": "status-item",
+              "state": "active",
+              "text": "1",
+              "background": "accent",
+              "foreground": "accent-foreground"
+            },
+            {
+              "id": "workspace-inactive",
+              "kind": "status-item",
+              "state": "inactive",
+              "text": "2",
+              "background": "surface",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "module-primary",
+              "kind": "status-item",
+              "state": "default",
+              "text": "primary",
+              "foreground": "foreground"
+            },
+            {
+              "id": "module-muted",
+              "kind": "status-item",
+              "state": "muted",
+              "text": "muted",
+              "foreground": "text-muted"
+            }
+          ]
+        },
+        {
+          "id": "window-focused",
+          "kind": "frame",
+          "state": "focused",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "focus",
+          "blocks": [
+            {
+              "id": "focus-ring",
+              "kind": "focus-ring",
+              "state": "focused",
+              "border": "focus"
+            },
+            {
+              "id": "window-focused-title",
+              "kind": "text",
+              "state": "focused",
+              "text": "Focused window",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "window-unfocused",
+          "kind": "frame",
+          "state": "inactive",
+          "background": "surface",
+          "foreground": "text-secondary",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "window-unfocused-title",
+              "kind": "text",
+              "state": "inactive",
+              "text": "Unfocused window",
+              "foreground": "text-secondary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desktop-shell-launcher",
+      "family": "desktop-shell",
+      "regions": [
+        {
+          "id": "launcher-overlay",
+          "kind": "overlay",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "launcher-query",
+              "kind": "text",
+              "state": "default",
+              "text": "query",
+              "foreground": "foreground"
+            }
+          ]
+        },
+        {
+          "id": "launcher-results",
+          "kind": "list",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "blocks": [
+            {
+              "id": "result-neighbor-above",
+              "kind": "list-item",
+              "state": "default",
+              "text": "Neighboring result",
+              "foreground": "text-secondary"
+            },
+            {
+              "id": "result-selected",
+              "kind": "list-item",
+              "state": "selected",
+              "text": "Selected result",
+              "background": "selection-background",
+              "foreground": "selection-foreground"
+            },
+            {
+              "id": "result-secondary-metadata",
+              "kind": "text",
+              "state": "muted",
+              "text": "Secondary metadata",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "result-neighbor-below",
+              "kind": "list-item",
+              "state": "default",
+              "text": "Another result",
+              "foreground": "text-secondary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desktop-shell-notification",
+      "family": "desktop-shell",
+      "regions": [
+        {
+          "id": "notification",
+          "kind": "surface",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "notification-title",
+              "kind": "text",
+              "state": "default",
+              "text": "Notification",
+              "foreground": "foreground"
+            },
+            {
+              "id": "notification-body",
+              "kind": "text",
+              "state": "default",
+              "text": "Body",
+              "foreground": "text-secondary"
+            }
+          ]
+        },
+        {
+          "id": "notification-urgent",
+          "kind": "surface",
+          "state": "urgent",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "warning",
+          "blocks": [
+            {
+              "id": "notification-urgent-title",
+              "kind": "text",
+              "state": "urgent",
+              "text": "Urgent",
+              "foreground": "warning"
+            }
+          ]
+        },
+        {
+          "id": "transient-overlay",
+          "kind": "overlay",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "overlay-content",
+              "kind": "text",
+              "state": "default",
+              "text": "Overlay",
+              "foreground": "foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
