@@ -26,7 +26,6 @@ func desktopShellWorkspaceScene() Scene {
 				Kind:       RegionSurface,
 				State:      StateDefault,
 				Background: RoleBackground,
-				Blocks:     []ContentBlock{},
 			},
 			{
 				ID:         "status-bar",
