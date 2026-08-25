@@ -190,30 +190,20 @@ func TestCanonicalizeRejectsResolvedRoleValue(t *testing.T) {
 	}
 }
 
-func TestCanonicalGoldenForOneScenePerFamily(t *testing.T) {
-	tests := []struct {
-		name    string
-		set     FixtureSet
-		sceneID SceneID
-		golden  string
-	}{
-		{"terminal-agent", TerminalAgentFixtureSet(), "terminal-shell", "canonical-terminal-agent.golden.json"},
-		{"code-diff", CodeDiffFixtureSet(), "code-editor", "canonical-code-diff.golden.json"},
-		{"desktop-shell", DesktopShellFixtureSet(), "desktop-shell-workspace", "canonical-desktop-shell.golden.json"},
-		{"reading-monitoring", ReadingMonitoringFixture(), "reading-note", "canonical-reading-monitoring.golden.json"},
-	}
-
-	for _, test := range tests {
-		t.Run(test.name, func(t *testing.T) {
-			encoded, err := CanonicalScene(test.set, test.sceneID)
-			if err != nil {
-				t.Fatalf("canonical scene: %v", err)
-			}
-			want := readGolden(t, test.golden)
-			if string(encoded) != want {
-				t.Fatalf("canonical scene differs from golden:\n%s", encoded)
-			}
-		})
+func TestCanonicalGoldenForEveryScene(t *testing.T) {
+	for _, set := range allFixtureSets() {
+		for _, scene := range set.Scenes {
+			t.Run(string(set.ID)+"/"+string(scene.ID), func(t *testing.T) {
+				encoded, err := CanonicalScene(set, scene.ID)
+				if err != nil {
+					t.Fatalf("canonical scene: %v", err)
+				}
+				want := readGolden(t, "canonical-"+string(scene.ID)+".golden.json")
+				if string(encoded) != want {
+					t.Fatalf("canonical scene differs from golden:\n%s", encoded)
+				}
+			})
+		}
 	}
 }
 

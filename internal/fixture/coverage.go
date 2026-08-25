@@ -14,9 +14,9 @@ const (
 // RoleReference records one role reference in the fixture structure, with its full
 // canonical path and the level at which it appears.
 type RoleReference struct {
-	Role  RoleID
-	Path  string
-	Level ReferenceLevel
+	Role  RoleID         `json:"role"`
+	Path  string         `json:"path"`
+	Level ReferenceLevel `json:"level"`
 }
 
 // Coverage returns every role reference in the fixture set, with its full path. The
@@ -100,8 +100,8 @@ func RoleCoverage(definition FixtureSet) map[RoleID][]RoleReference {
 
 // RoleCoverageEntry pairs a required role with the references that cover it.
 type RoleCoverageEntry struct {
-	Role       RoleID
-	References []RoleReference
+	Role       RoleID          `json:"role"`
+	References []RoleReference `json:"references"`
 }
 
 // CoverageView returns every required role in schema order, each with the references
@@ -116,7 +116,11 @@ func CoverageView(sets ...FixtureSet) []RoleCoverageEntry {
 	}
 	entries := make([]RoleCoverageEntry, 0, len(requiredCoverageRoles()))
 	for _, role := range requiredCoverageRoles() {
-		entries = append(entries, RoleCoverageEntry{Role: role, References: byRole[role]})
+		references := byRole[role]
+		if references == nil {
+			references = []RoleReference{}
+		}
+		entries = append(entries, RoleCoverageEntry{Role: role, References: references})
 	}
 	return entries
 }

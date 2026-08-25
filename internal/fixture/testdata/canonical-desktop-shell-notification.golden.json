@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-desktop-shell",
+  "scenes": [
+    {
+      "id": "desktop-shell-notification",
+      "family": "desktop-shell",
+      "regions": [
+        {
+          "id": "notification",
+          "kind": "surface",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "notification-title",
+              "kind": "text",
+              "state": "default",
+              "text": "Notification",
+              "foreground": "foreground"
+            },
+            {
+              "id": "notification-body",
+              "kind": "text",
+              "state": "default",
+              "text": "Body",
+              "foreground": "text-secondary"
+            }
+          ]
+        },
+        {
+          "id": "notification-urgent",
+          "kind": "surface",
+          "state": "urgent",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "warning",
+          "blocks": [
+            {
+              "id": "notification-urgent-title",
+              "kind": "text",
+              "state": "urgent",
+              "text": "Urgent",
+              "foreground": "warning"
+            }
+          ]
+        },
+        {
+          "id": "transient-overlay",
+          "kind": "overlay",
+          "state": "default",
+          "background": "surface-elevated",
+          "foreground": "foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "overlay-content",
+              "kind": "text",
+              "state": "default",
+              "text": "Overlay",
+              "foreground": "foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1",
+  "id": "fixture-terminal-agent",
+  "scenes": [
+    {
+      "id": "agent-conversation",
+      "family": "terminal-agent",
+      "regions": [
+        {
+          "id": "conversation-frame",
+          "kind": "frame",
+          "state": "active",
+          "background": "terminal-background",
+          "foreground": "terminal-foreground",
+          "border": "surface",
+          "blocks": [
+            {
+              "id": "assistant-prose",
+              "kind": "text",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "The fixture set is a measurement contract. Each scene renders from one structural definition, so a comparison can only differ in color. ",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                },
+                {
+                  "text": "`FixtureSet.Validate`",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " rejects a scene whose family is unknown, and ",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                },
+                {
+                  "text": "`ValidatePair`",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " proves every role reference resolves against a palette.",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                }
+              ]
+            },
+            {
+              "id": "assistant-code",
+              "kind": "code",
+              "state": "default",
+              "runs": [
+                {
+                  "text": "func ",
+                  "state": "default",
+                  "foreground": "ansi-5"
+                },
+                {
+                  "text": "Validate",
+                  "state": "default",
+                  "foreground": "ansi-4"
+                },
+                {
+                  "text": "() error {",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                },
+                {
+                  "text": "  return nil",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                },
+                {
+                  "text": "}",
+                  "state": "default",
+                  "foreground": "terminal-foreground"
+                }
+              ],
+              "background": "surface-elevated",
+              "foreground": "terminal-foreground"
+            },
+            {
+              "id": "tool-call",
+              "kind": "text",
+              "state": "info",
+              "runs": [
+                {
+                  "text": "▸ tool call: ",
+                  "state": "info",
+                  "foreground": "info"
+                },
+                {
+                  "text": "read_file",
+                  "state": "default",
+                  "foreground": "ansi-6"
+                },
+                {
+                  "text": " · ",
+                  "state": "muted",
+                  "foreground": "text-muted"
+                },
+                {
+                  "text": "path=pkg/parser/schema.go",
+                  "state": "muted",
+                  "foreground": "text-muted"
+                }
+              ]
+            },
+            {
+              "id": "tool-result",
+              "kind": "text",
+              "state": "muted",
+              "text": "result: 214 lines, 6.1 kB, cached",
+              "foreground": "text-muted"
+            },
+            {
+              "id": "conversation-active",
+              "kind": "text",
+              "state": "active",
+              "text": "active: the response currently streaming",
+              "foreground": "terminal-foreground"
+            },
+            {
+              "id": "conversation-inactive",
+              "kind": "text",
+              "state": "inactive",
+              "text": "inactive: an earlier exchange, dimmed",
+              "foreground": "text-muted"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
