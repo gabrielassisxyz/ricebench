@@ -44,6 +44,8 @@ bin/install-hooks    # once after cloning: versioned git hooks, including the se
 bin/ci               # the full gate, and the exact thing CI runs
 ```
 
+The frontend also exposes `npm run typecheck` and `npm run test` from `web/`. The test command checks the fixture rendering vocabulary and rejects raw colors or non-neutral candidate metadata in renderer source files.
+
 `bin/worktree new <type>/<description>` creates an isolated worktree and branch. `AGENTS.md` carries the working conventions for both people and agents.
 
 ## License
